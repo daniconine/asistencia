@@ -9,6 +9,7 @@
                     <field name="weekday"/>
                     <field name="entry_time"/>
                     <field name="exit_time"/>
+                    <field name="tardanza_minutos"/>
                 </xpath>
             </field>
         </record>

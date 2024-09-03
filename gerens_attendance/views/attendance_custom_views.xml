@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+
+    <!-- Acción para la vista personalizada -->
+    <record id="action_hr_attendance_custom_view" model="ir.actions.act_window">
+        <field name="name">Personalizada</field>
+        <field name="res_model">hr.attendance</field>
+        <field name="view_mode">tree,form</field>
+        
+    </record>
+
+    <!-- Definición de la vista personalizada (Tree View) -->
+    <record id="view_hr_attendance_custom_tree" model="ir.ui.view">
+        <field name="name">hr.attendance.custom.tree</field>
+        <field name="model">hr.attendance</field>
+        <field name="arch" type="xml">
+            <tree string="Asistencia Personalizada">
+                <field name="employee_id"/>
+                <field name="check_in"/>
+                <field name="check_out"/>
+                <field name="weekday"/>
+                <field name="entry_time"/>
+                <field name="exit_time"/>
+                <field name="tardanza_minutos"/>
+                
+            </tree>
+        </field>
+    </record>
+
+    <!-- Submenú personalizado bajo "Attendances" -->
+    <menuitem id="menu_hr_attendance_custom"
+            name="Personalizada"
+            parent="hr_attendance.menu_hr_attendance_root"
+            sequence="25"
+            groups="hr_attendance.group_hr_attendance_user"
+            action="action_hr_attendance_custom_view"/>
+</odoo>
