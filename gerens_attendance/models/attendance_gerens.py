@@ -7,7 +7,8 @@ class HrAttendance(models.Model):
     weekday = fields.Char(string='Día', compute='_compute_weekday', store=True)
     entry_time = fields.Char(string='Hora de entrada', compute='_compute_times', store=True)
     exit_time = fields.Char(string='Hora de salida', compute='_compute_times', store=True)
-    tardanza_minutos = fields.Integer(string="Minutos de Tardanza", compute="_compute_tardanza_minutos")
+    tardanza_minutos = fields.Integer(string="Minutos de Tardanza", compute="_compute_tardanza_minutos", store=True)
+    horas_faltantes = fields.Float(string="Horas Faltantes/Extras", compute="_compute_horas_faltantes", store=True)
 
     @api.depends('check_in')
     def _compute_weekday(self):
@@ -54,11 +55,35 @@ class HrAttendance(models.Model):
                         tardanza = (actual_start - expected_start).total_seconds() / 60
                         record.tardanza_minutos = int(tardanza)
 
-                        # Si la tardanza es mayor a 0, enviar el correo
-                        if record.tardanza_minutos > 0:
-                            record._send_tardanza_email()
+                        
+    @api.depends('check_in', 'check_out', 'employee_id')
+    def _compute_horas_faltantes(self):
+        for record in self:
+            record.horas_faltantes = 0.0  # Valor predeterminado
 
-    def _send_tardanza_email(self):
-        template = self.env['mail.template'].browse(20)
-        if template:
-            template.send_mail(self.id, force_send=True)
+            if record.check_in and record.check_out and record.employee_id:
+                # Busca el evento del calendario que coincide con el empleado y la fecha/hora de check-in
+                calendar_event = self.env['calendar.event'].search([
+                    ('employee_id', '=', record.employee_id.id),
+                    ('start', '<=', record.check_in),
+                    ('stop', '>=', record.check_in),
+                ], limit=1)
+
+                if calendar_event:
+                    expected_start = fields.Datetime.context_timestamp(record, calendar_event.start)
+                    expected_end = fields.Datetime.context_timestamp(record, calendar_event.stop)
+                    actual_start = fields.Datetime.context_timestamp(record, record.check_in)
+                    actual_end = fields.Datetime.context_timestamp(record, record.check_out)
+
+                    # Calcular las horas programadas y las horas trabajadas
+                    horas_programadas = (expected_end - expected_start).total_seconds() / 3600
+                    horas_trabajadas = (actual_end - actual_start).total_seconds() / 3600
+
+                    # Calcular la diferencia de horas
+                    record.horas_faltantes = horas_trabajadas - horas_programadas
+
+                    # Si la diferencia es negativa, significa que faltan horas
+                    if record.horas_faltantes < 0:
+                        record.horas_faltantes = round(record.horas_faltantes, 2)
+                    else:
+                        record.horas_faltantes = round(record.horas_faltantes, 2)

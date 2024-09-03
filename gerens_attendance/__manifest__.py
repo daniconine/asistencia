@@ -17,8 +17,7 @@
     "data": [
              "views/attendance_gerens_view.xml",
              "views/calendar_event_view.xml",
-             "views/attendance_custom_views.xml",
-             ],
+            ],
     #"post_init_hook": "post_init_hook",
 }
 
