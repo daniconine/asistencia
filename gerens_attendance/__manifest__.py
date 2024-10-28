@@ -5,7 +5,7 @@
 {
     "name": "Asistencia Gerens Desarrollo",
     "summary": "Add features to Attendance ",
-    "version": "15.0.1.0.0",
+    "version": "16.0.1.0.0",
     "category": "Customer Relationship Management",
     "website": "",
     "author": "Daniel C, Grupo ESOC, Tecnativa, Odoo Community Association (OCA)",
@@ -15,8 +15,10 @@
     "auto_install": False,
     "depends": ["hr_attendance"],
     "data": [
+             "security/ir.model.access.csv",
              "views/attendance_gerens_view.xml",
              "views/calendar_event_view.xml",
+             "views/hr_employee_schedule_view.xml",
             ],
     #"post_init_hook": "post_init_hook",
 }

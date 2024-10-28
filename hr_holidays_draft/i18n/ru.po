@@ -1,0 +1,820 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_holidays_kub3
+#
+# Translators:
+# Денис Карабакин <karabakin_da@mail.ru>, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-23 09:00+0000\n"
+"PO-Revision-Date: 2023-06-23 18:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#. module: hr_holidays_kub3
+#: code:addons/hr_holidays_kub3/models/draft_leave.py:0
+#, python-format
+msgid "Hours"
+msgstr "Часы"
+
+#. module: hr_holidays_kub3
+#: code:addons/hr_holidays_kub3/models/draft_leave.py:0
+#, python-format
+msgid "hours"
+msgstr "часы"
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py:0
+#, python-format
+msgid "days"
+msgstr "дни"
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py:0
+#, python-format
+msgid "Only a Time Off Manager can reset a refused leave."
+msgstr "Только менеджер по отгулам может восстановить запрос на отпуск."
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py:0
+#, python-format
+msgid "Only a Time Off Manager can reset a started leave."
+msgstr "Только менеджер по отгулам может сбросить начатый отпуск."
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py:0
+#, python-format
+msgid "Only a Time Off Manager can reset other people leaves."
+msgstr "Только менеджер по отгулам может сбросить отгулы других людей."
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py:0
+#, python-format
+msgid "Only a Time Off Manager can approve/refuse its own requests."
+msgstr "Только менеджер по отгулам может утверждать/отклонять заявки."
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py:0
+#, python-format
+msgid "You must be %s's Manager to approve this leave"
+msgstr "Вы должны быть руководителем %s, чтобы одобрить этот отпуск"
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py:0
+#, python-format
+msgid "You must be either %s's manager or Time off Manager to approve this leave"
+msgstr ""
+"Вы должны быть либо руководителем %s, либо менеджером по отсутствию, чтобы "
+"одобрить этот отпуск."
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays/models/hr_leave.py:0
+#, python-format
+msgid "All Time Off"
+msgstr "Все отсутствия"
+
+#. module: hr_holidays_draft
+#: model:ir.actions.act_window,name:hr_holidays_draft.hr_holidays_draft_leave_action_approve_department
+#: model:ir.ui.menu,name:hr_holidays_draft.menu_open_department_hr_holidays_draft_leave_approve
+#: model:ir.ui.menu,name:hr_holidays_draft.menu_open_department_hr_holidays_draft_leave_approve_sub
+msgid "My Drafts"
+msgstr "Мои черновики"
+
+#. module: hr_holidays_draft
+#. odoo-javascript
+#: code:addons/hr_holidays_draft/static/src/views/calendar/calendar_controller.js:0
+#: code:addons/hr_holidays_draft/static/src/views/calendar/calendar_controller.xml:0
+#, python-format
+msgid "New Draft"
+msgstr "Новый черновик"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "Publish"
+msgstr "Опубликовать"
+
+#. module: hr_holidays_draft
+#: model:ir.actions.server,name:hr_holidays_draft.action_hr_holidays_draft_approval
+msgid "Publish"
+msgstr "Опубликовать"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__holiday_status_id
+msgid "Time Off Type"
+msgstr "Тип отсутствий"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "Dates"
+msgstr "Даты"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_tree
+msgid "Duration"
+msgstr "Длительность"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__name
+msgid "Description"
+msgstr "Описание"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "Supporting Document"
+msgstr "Подтверждающий документ"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "Add a description..."
+msgstr "Добавить описание…"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "Date"
+msgstr "Дата"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__supported_attachment_ids
+msgid "Attach File"
+msgstr "Прикрепить файл"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__request_unit_half
+msgid "Half Day"
+msgstr "Полдня"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__request_unit_hours
+msgid "Custom Hours"
+msgstr "С точностью до часа"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "From"
+msgstr "C"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "To"
+msgstr "По"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__request_hour_from
+msgid "Hour from"
+msgstr "Время с"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__request_hour_to
+msgid "Hour to"
+msgstr "часов до"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_tree
+msgid "Mode"
+msgstr "Способ"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_date_from_period__am
+msgid "Morning"
+msgstr "Утро"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_date_from_period__pm
+msgid "Afternoon"
+msgstr "День"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__employee_id
+msgid "Employee"
+msgstr "Сотрудник"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__department_id
+msgid "Department"
+msgstr "Подразделение"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__date_from
+msgid "Start Date"
+msgstr "Дата начала"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__date_to
+msgid "End Date"
+msgstr "Дата окончания"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "<span class=\"text-muted\">From</span>"
+msgstr "<span class=\"text-muted\">С</span>"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_form
+msgid "<span class=\"text-muted\">To</span>"
+msgstr "<span class=\"text-muted\">По</span>"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.actions.act_window,help:hr_holidays_draft.hr_holidays_draft_leave_action_approve_department
+msgid "Meet the Time Off Drafts dashboard"
+msgstr "Ознакомьтесь с графиком черновиков отсутствий."
+
+#. module: hr_holidays_draft
+#: model_terms:ir.actions.act_window,help:hr_holidays_draft.hr_holidays_draft_leave_action_approve_department
+msgid "Add your Time Off Drafts here"
+msgstr "Добавьте черновые варианты отпусков"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__active
+msgid "Active"
+msgstr "Активно"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__private_name
+msgid "Time Off Description"
+msgstr "Описание отсутствия"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__holiday_type
+msgid "Allocation Mode"
+msgstr "Вид планируемого отсутствия"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__state
+msgid "Status"
+msgstr "Статус"
+
+#. module: hr_holidays_draft
+#. odoo-javascript
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__state__confirm
+msgid "To Approve"
+msgstr "К одобрению"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__state__validate
+msgid "Approved"
+msgstr "Одобрено"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__state__validate1
+msgid "Second Approval"
+msgstr "Повторное согласование"
+
+#. module: hr_holidays_draft
+#. odoo-javascript
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__state__refuse
+msgid "Refused"
+msgstr "Отказано"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__state__draft
+msgid "To Submit"
+msgstr "Отправить на согласование"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__report_note
+msgid "HR Comments"
+msgstr "HR комментарии"
+
+#. module: hr_holidays_draft
+#: model:ir.model,name:hr_holidays_draft.model_res_users
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__user_id
+msgid "User"
+msgstr "Пользователь"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__manager_id
+msgid "Manager"
+msgstr "Руководитель"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__holiday_allocation_id
+msgid "Allocation"
+msgstr "Плановое отсутствие"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__color
+msgid "Color"
+msgstr "Цвет"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__validation_type
+msgid "Validation Type"
+msgstr "Тип подтверждения"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__request_date_from
+msgid "Request Start Date"
+msgstr "Начальная дата запроса"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__request_date_to
+msgid "Request End Date"
+msgstr "Конечная дата запроса"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__employee_company_id
+msgid "Company"
+msgstr "Компания"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__active_employee
+msgid "Employee Active"
+msgstr "Сотрудник активен"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__mode_company_id
+msgid "Company Mode"
+msgstr "Режим работы компании"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__tz_mismatch
+msgid "Tz Mismatch"
+msgstr "Несоответствие ТЗ"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave_report_calendar__tz
+msgid "Timezone"
+msgstr "Часовой пояс"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__notes
+msgid "Reasons"
+msgstr "Причины"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__number_of_days
+msgid "Duration (Days)"
+msgstr "Продолжительность (дни)"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__number_of_days_display
+msgid "Duration (days)"
+msgstr "Продолжительность (дни)"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leaven__number_of_hours_display
+msgid "Duration (hours)"
+msgstr "Продолжительность (часы)"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__duration_display
+msgid "Requested (Days/Hours)"
+msgstr "Запрошенные (дни/часы)"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__meeting_id
+msgid "Meeting"
+msgstr "Встреча"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__parent_id
+msgid "Parent"
+msgstr "Родитель"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__linked_request_ids
+msgid "Linked Requests"
+msgstr "Связанные заявки"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,help:hr_holidays_draft.field_hr_holidays_draft_leave__category_id
+msgid "Category of Employee"
+msgstr "Категория сотрудника"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__first_approver_id
+msgid "First Approval"
+msgstr "Первое согласование"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__second_approver_id
+msgid "Second Approval"
+msgstr "Повторное согласование"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__can_reset
+msgid "Can reset"
+msgstr "Можно сбросить"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__can_approve
+msgid "Can Approve"
+msgstr "Можно одобрить"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__can_cancel
+msgid "Can Cancel"
+msgstr "Можно отменить"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__attachment_ids
+msgid "Attachments"
+msgstr "Вложения"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__leave_type_support_document
+msgid "Supporting Document"
+msgstr "Подтверждающий документ"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_leave__supported_attachment_ids
+msgid "Attach File"
+msgstr "Прикрепить файл"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__supported_attachment_ids_count
+msgid "Supported Attachment Ids Count"
+msgstr "Кол-во идентификаторов вложений"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__leave_type_request_unit
+msgid "Take Time Off in"
+msgstr "Взять отгул"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__is_hatched
+msgid "Hatched"
+msgstr "Заштриховано"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__is_striked
+msgid "Striked"
+msgstr "Размещено"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_holidays_draft_leave__has_stress_day
+msgid "Has Stress Day"
+msgstr "День стресса"
+
+#. module: hr_holidays_draft
+#. odoo-python
+#: code:addons/hr_holidays_draft/models/draft_leave.py.py:0
+#, python-format
+msgid ""
+"The number of remaining time off is not sufficient for this time off type.\n"
+"Please also check the time off waiting for validation."
+msgstr ""
+"Количество оставшихся отгулов недостаточно для данного типа отсутствий.\n"
+"Пожалуйста, проверьте также отгулы, ожидающие подтверждения."
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_activity
+msgid "Time Off Draft Request"
+msgstr "Запрос на черновик"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_activity
+msgid "To:"
+msgstr "По:"
+
+#. module: hr_holidays_draft
+#: model_terms:ir.ui.view,arch_db:hr_holidays_draft.hr_holidays_draft_leave_view_activity
+msgid "From:"
+msgstr "С:"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,field_description:hr_holidays_draft.field_hr_leave_type__is_draft
+msgid "Visible in Drafts"
+msgstr "Отображать в черновиках"
+
+#. module: hr_holidays_draft
+#. odoo-javascript
+#: code:addons/hr_holidays_draft/static/src/dashboard/time_off_card.xml:0
+#, python-format
+msgid "Taken"
+msgstr "Взято"
+
+#. module: hr_holidays_draft
+#. odoo-javascript
+#: code:addons/hr_holidays_draft/static/src/dashboard/time_off_card.xml:0
+#, python-format
+msgid "taken"
+msgstr "взято"
+
+#. module: hr_holidays_draft
+#. odoo-javascript
+#: code:addons/hr_holidays_draft/static/src/dashboard/time_off_card.xml:0
+#, python-format
+msgid "days"
+msgstr "дней"
+
+#. module: hr_holidays_draft
+#. odoo-javascript
+#: code:addons/hr_holidays_draft/static/src/dashboard/time_off_card.xml:0
+#, python-format
+msgid "Days"
+msgstr "Дней"
+
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__10
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__10
+msgid "10:00 AM"
+msgstr "10:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__22
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__22
+msgid "10:00 PM"
+msgstr "22:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__10_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__10_5
+msgid "10:30 AM"
+msgstr "10:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__22_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__22_5
+msgid "10:30 PM"
+msgstr "22:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__11
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__11
+msgid "11:00 AM"
+msgstr "11:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__23
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__23
+msgid "11:00 PM"
+msgstr "23:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__11_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__11_5
+msgid "11:30 AM"
+msgstr "11:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__23_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__23_5
+msgid "11:30 PM"
+msgstr "23:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__0
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__0
+msgid "12:00 AM"
+msgstr "00:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__12
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__12
+msgid "12:00 PM"
+msgstr "12:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__0_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__0_5
+msgid "12:30 AM"
+msgstr "00:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__12_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__12_5
+msgid "12:30 PM"
+msgstr "12:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__1
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__1
+msgid "1:00 AM"
+msgstr "1:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__13
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__13
+msgid "1:00 PM"
+msgstr "13:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__1_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__1_5
+msgid "1:30 AM"
+msgstr "1:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__13_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__13_5
+msgid "1:30 PM"
+msgstr "13:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__2
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__2
+msgid "2:00 AM"
+msgstr "2:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__14
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__14
+msgid "2:00 PM"
+msgstr "14:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__2_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__2_5
+msgid "2:30 AM"
+msgstr "2:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__14_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__14_5
+msgid "2:30 PM"
+msgstr "14:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__3
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__3
+msgid "3:00 AM"
+msgstr "3:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__15
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__15
+msgid "3:00 PM"
+msgstr "15:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__3_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__3_5
+msgid "3:30 AM"
+msgstr "3:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__15_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__15_5
+msgid "3:30 PM"
+msgstr "15:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__4
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__4
+msgid "4:00 AM"
+msgstr "4:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__16
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__16
+msgid "4:00 PM"
+msgstr "16:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__4_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__4_5
+msgid "4:30 AM"
+msgstr "4:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__16_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__16_5
+msgid "4:30 PM"
+msgstr "16:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__5
+msgid "5:00 AM"
+msgstr "5:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__17
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__17
+msgid "5:00 PM"
+msgstr "17:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__5_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__5_5
+msgid "5:30 AM"
+msgstr "5:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__17_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__17_5
+msgid "5:30 PM"
+msgstr "17:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__6
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__6
+msgid "6:00 AM"
+msgstr "6:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__18
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__18
+msgid "6:00 PM"
+msgstr "18:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__6_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__6_5
+msgid "6:30 AM"
+msgstr "6:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__18_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__18_5
+msgid "6:30 PM"
+msgstr "18:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__7
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__7
+msgid "7:00 AM"
+msgstr "7:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__19
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__19
+msgid "7:00 PM"
+msgstr "19:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__7_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__7_5
+msgid "7:30 AM"
+msgstr "7:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__19_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__19_5
+msgid "7:30 PM"
+msgstr "19:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__8
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__8
+msgid "8:00 AM"
+msgstr "8:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__20
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__20
+msgid "8:00 PM"
+msgstr "20:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__8_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__8_5
+msgid "8:30 AM"
+msgstr "8:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__20_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__20_5
+msgid "8:30 PM"
+msgstr "20:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__9
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__9
+msgid "9:00 AM"
+msgstr "9:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__21
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__21
+msgid "9:00 PM"
+msgstr "21:00"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__9_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__9_5
+msgid "9:30 AM"
+msgstr "9:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_from__21_5
+#: model:ir.model.fields.selection,name:hr_holidays_draft.selection__hr_holidays_draft_leave__request_hour_to__21_5
+msgid "9:30 PM"
+msgstr "21:30"
+
+#. module: hr_holidays_draft
+#: model:ir.model.fields,help:hr_holidays_draft.field_hr_holidays_draft_leave__holiday_type
+msgid ""
+"By Employee: Allocation/Request for individual Employee, By Employee Tag: "
+"Allocation/Request for group of employees in category"
+msgstr ""
+"По сотруднику: Отсутствие/Запрос для каждого сотрудника, По тегу сотрудника:"
+" Отсутствие/Запрос для группы сотрудников в категории"

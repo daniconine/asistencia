@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_employee_form_schedule" model="ir.ui.view">
+        <field name="name">hr.employee.form.schedule</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <!-- Insertamos una nueva pestaña en el notebook del formulario del empleado -->
+            <xpath expr="//notebook" position="inside">
+                <page string="Horario Semanal">
+                    <group>
+                        <!-- Relación One2many con los horarios semanales -->
+                        <field name="weekly_schedule_ids">
+                            <tree string="Horarios Semanales">
+                                <field name="day_of_week"/>
+                                <field name="start_time"/>
+                                <field name="end_time"/>
+                                <field name="location"/>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                            </tree>
+                            <form string="Horario Semanal">
+                                <group>
+                                    <field name="day_of_week"/>
+                                    <field name="start_time"/>
+                                    <field name="end_time"/>
+                                    <field name="location"/>
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                </group>
+                            </form>
+
+                        </field>
+                    </group>
+                    <button name="action_generate_schedule" string="Generar Horario" type="object" class="oe_highlight" />
+
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

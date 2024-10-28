@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <div t-name="hr_holidays_draft.TimeOffCard" owl="1" class="o_timeoff_card py-3 text-odoo">
+        <t t-set="data" t-value="props.data"/>
+        <t t-set="duration" t-value="data.draft_virtual_leaves_taken"/>
+        <t t-set="show_popover" t-value="true"/>
+
+        <strong class="o_timeoff_name"><t t-esc="props.name"/></strong>
+        <span class="o_timeoff_duration">
+            <t t-if="data and data.icon">
+                <img t-att-src="data.icon" />
+            </t>
+            <t t-esc="duration"/>
+        </span>
+        <div class="text-uppercase">
+            <t t-if="data.request_unit == 'hour'" name="duration_unit">hours</t>
+            <t t-else="">days</t>
+            taken
+        </div>
+    </div>
+
+    <t t-name="hr_holidays_draft.TimeOffCardMobile" owl="1">
+        <t t-set="data" t-value="props.data"/>
+        <t t-set="duration" t-value="data.draft_virtual_leaves_taken"/>
+
+        <span class="float-end o_timeoff_card_mobile">
+            <strong t-esc="duration"/> <t t-if="data.request_unit == 'hour'">Hours</t><t t-else="">Days</t> <span class="text-odoo">Taken</span>
+        </span>
+    </t>
+
+</templates>

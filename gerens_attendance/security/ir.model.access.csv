@@ -1,5 +1,4 @@
 "id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-"access_empresa_public","empresa group_public","model_empresa","base.group_public",1,0,0,0
-"access_empresa_portal","empresa group_portal","model_empresa","base.group_portal",1,0,0,0
-"access_empresa_group_partner_manager","empresa group_partner_manager","model_empresa","res_partner group_user",1,1,1,1
 "access_hr_attendance_custom_user","access_hr_attendance_custom_user","model_hr_attendance","",1,1,1,1
+access_employee_weekly_schedule_user,access_employee_weekly_schedule_user,model_employee_weekly_schedule,hr.group_hr_user,1,1,1,1
+access_employee_weekly_schedule_manager,access_employee_weekly_schedule_manager,model_employee_weekly_schedule,base.group_system,1,1,1,1
