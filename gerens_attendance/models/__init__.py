@@ -1,4 +1,0 @@
-# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
-from . import attendance_gerens
-from . import calendar_gerens
-from . import employee_gerens
